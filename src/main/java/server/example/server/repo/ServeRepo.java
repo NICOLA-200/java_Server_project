@@ -6,4 +6,6 @@ import server.example.server.model.Server;
 public interface ServeRepo extends JpaRepository<Server, Long> {
 
   Server findByIpAddress(String ipAddress);
+  Server findByName(String name);
+
 }
